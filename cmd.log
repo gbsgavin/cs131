@@ -1,0 +1,84 @@
+Script started on 2024-02-29 02:08:49-05:00
+#1
+bash-4.4$ mkdir Assignment1
+bash-4.4$ cde[K Assignment1cAssignment1sAssignment11Assignment13Assignment11Assignment1/Assignment1
+bash: cd: cs131/Assignment1: No such file or directory
+bash-4.4$ pwd
+/mnt/scratch/SP24_CS131_Jyotika/gavinsp24/cs131
+bash-4.4$ ls
+Assignment1  cmd.log
+bash-4.4$ cs[Kd Assignment1
+#2
+bash-4.4$ Echo[K[K[K[Kecho $she[K[K[K[K$She[K[KHELL
+/bin/bash
+#3
+bash-4.4$ echo $HOME
+/mnt/scratch/SP24_CS131_Jyotika/gavinsp24
+#4
+bash-4.4$ id -u
+1218
+#5
+bash-4.4$ id -nG
+gavinsp24 S78
+bash-4.4$ mkdir myDI[Kir
+bash-4.4$ cd myDir
+bash-4.4$ my[K[Kch mod[K[K[K[Kmod w-u [K[K[K[Ku-w myFD[K[KDir
+chmod: cannot access 'myDir': No such file or directory
+bash-4.4$ pwd
+/mnt/scratch/SP24_CS131_Jyotika/gavinsp24/cs131/Assignment1/myDir
+bash-4.4$ ls
+bash-4.4$ chmod u-w myDir
+chmod: cannot access 'myDir': No such file or directory
+bash-4.4$ cd myh[K[K[KAssignment1
+bash: cd: Assignment1: No such file or directory
+bash-4.4$ cd ..
+bash-4.4$ pwd
+/mnt/scratch/SP24_CS131_Jyotika/gavinsp24/cs131/Assignment1
+bash-4.4$ mkdir myDir
+mkdir: cannot create directory ‘myDir’: File exists
+bash-4.4$ mn[Kkdir[K[K[K[K[Kc[Kcd myDir
+bash-4.4$ chmod u-w myDir
+chmod: cannot access 'myDir': No such file or directory
+bash-4.4$ cd ..
+#6
+bash-4.4$ chmod u-w myDir
+#7
+bash-4.4$ l[Kmkdir myDir2
+bash-4.4$ mkdir myDir3
+bash-4.4$ cd myDie[Kr2
+bash-4.4$ mk[K[Ktouch myFile.txt
+bash-4.4$ my[K[Kmc[Kv myDir2/myFile.txt/myDir3[K[K[K[K[K[K[K myDir3
+mv: cannot stat 'myDir2/myFile.txt': No such file or directory
+bash-4.4$ cd ..
+bash-4.4$ my[Kv myDir2/myFile.txt myDir3
+#8
+bash-4.4$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       32615       19563        3562       19188       33731
+Swap:          4119           0        4119
+#9
+bash-4.4$ catr[K/[K [K te[K[K[K /c[Ketc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+#10
+bash-4.4$ ls -l /t[Ketc/os-release
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+bash-4.4$ exit
+exit
+
+Script done on 2024-02-29 02:28:35-05:00
