@@ -1,0 +1,15 @@
+1. one finds the path to all the /etc files
+two is probably empty
+
+2. The command(s) used to find it was this:
+cut -d ',' -f 20,21 'Global YouTube Statistics.csv' | tail -n +2 | sort | uniq -c | sort -nr | head -n 3
+so i cut all of the lines except the year and month. then tail gets rid of the header and sort organizes everything. unique -c counts the occurences of channels being created and then head helps to only show the top 3
+
+3. pgrep systemd was used
+
+4. when i used pgrep systemd at first i saw 2 lines of numbers. on the second terminal i was 3 then 2 when i closed the vi.
+
+5. ps -ef | grep systemd  
+it helps boot
+
+6. ps is a system report. a is all processes, u is user detailed processes and x is extended processes.
