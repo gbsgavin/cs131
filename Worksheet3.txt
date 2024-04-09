@@ -1,0 +1,4 @@
+awk -F',' 'BEGIN {""} NR>1 && $8=="United States" {print $8", "$2", "$16} NR>1 && $8=="India" {print $8", "$2", "$16} NR>1 && $8=="United Kingdom" {print $8", "$2", "$16}' "Global YouTube Statistics.csv" | sort -t',' -k3,3nr | awk -F',' '!seen[$1]++' | head -n 4
+
+
+grep 'Sports\|Education\|Entertainment' "Global YouTube Statistics.csv" | sort -t',' -k3nr | awk -F',' '!seen[$5]++' | awk -F',' '$5=="Sports" || $5=="Education" || $5=="Entertainment"' | head -n 3
